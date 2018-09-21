@@ -1,0 +1,53 @@
+.popup-form
+  display: none
+  max-width: 600px
+  width: 100%
+
+  &.fancybox-content
+    padding: 0
+
+  &__title-block
+    align-items: center
+    background-color: #232f3e
+    display: flex
+    justify-content: space-between
+    padding: 10px 15px
+
+  &__title
+    color: #fff
+    font-size: 18px
+    font-weight: 700
+    margin-bottom: 0
+    margin-top: 0
+    margin-right: 15px
+    text-transform: uppercase
+
+    &::before
+      content: '\f1a7'
+      font-family: 'Ionicons'
+      margin-right: 10px
+
+  &__close
+    font-size: 30px
+    line-height: 1
+    width: 30px
+    height: 30px
+    padding: 0
+    cursor: pointer
+    transition: color .3s
+    color: #fff
+    border: none
+    background: none
+
+  &__content
+    padding: 15px
+
+  &__row
+    margin-bottom: 15px
+
+  &__label
+    display: block
+    padding-bottom: 5px
+
+  &__input
+    width: 100%

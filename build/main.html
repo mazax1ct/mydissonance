@@ -8,11 +8,8 @@
 
     <title>Mydissonance - главная</title>
 
-    <script src="index_files/ocquickview.js"></script>
-    <script src="index_files/oclayerednavigation.js"></script>
-    <script src="index_files/ocajaxlogin.js"></script>
-
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;subset=cyrillic-ext" rel="stylesheet">
+
     <link rel="stylesheet" href="css/style.css?v1"/>
   </head>
   <body id="top">
@@ -155,8 +152,8 @@
               </div>
             </div>
             <div class="header__login">
-              <a id="a-register-link" href="javascript:void(0);" onclick="ocajaxlogin.appendRegisterForm()">Регистрация</a>
-              <a id="a-login-link" href="javascript:void(0);" onclick="ocajaxlogin.appendLoginForm()">Вход</a>
+              <a href="#register-form" data-fancybox='register'>Регистрация</a>
+              <a href="#login-form" data-fancybox='login'>Вход</a>
             </div>
           </div>
         </div>
@@ -298,8 +295,73 @@
       </div>
     </footer>
     <a class="js-to-top back-top" href="#top"><i class="icon ion-ios-arrow-up"></i></a>
+    <div id="login-form" class="popup-form">
+      <div class="popup-form__title-block">
+        <p class="popup-form__title">Вход</p>
+        <button class="js-popup-close popup-form__close" type="button" title="Закрыть"><i class="ion-ios-close-circle"></i></button>
+      </div>
+      <div class="popup-form__content">
+          <form action="/" method="post">
+            <div class="popup-form__row">
+              <label class="popup-form__label" for="login">Ваш логин</label>
+              <input class="popup-form__input input" id="login" type="text" name="login" value="" placeholder="Ваш логин">
+            </div>
+            <div class="popup-form__row">
+              <label class="popup-form__label" for="password">Пароль</label>
+              <input class="popup-form__input input" id="password" type="text" name="password" value="" placeholder="Ваш пароль">
+            </div>
+            <div class="popup-form__row">
+              <a href="#">Я забыл свой пароль</a>
+            </div>
+            <button class="button" type="button">Войти</button>
+            <button class="button" type="button">Создать аккаунт</button>
+          </form>
+      </div>
+    </div>
+    <div id="register-form" class="popup-form">
+      <div class="popup-form__title-block">
+        <p class="popup-form__title">Регистрация</p>
+        <button class="js-popup-close popup-form__close" type="button" title="Закрыть"><i class="ion-ios-close-circle"></i></button>
+      </div>
+      <div class="popup-form__content">
+        <form action="/" method="post">
+          <div class="popup-form__row">
+            <label class="popup-form__label" for="user_name">Имя<span class="required">*</span></label>
+            <input class="popup-form__input input" id="user_name" type="text" name="user_name" value="" placeholder="Имя">
+          </div>
+          <div class="popup-form__row">
+            <label class="popup-form__label" for="user_lastname">Фамилия</label>
+            <input class="popup-form__input input" id="user_lastname" type="text" name="user_lastname" value="" placeholder="Фамилия">
+          </div>
+          <div class="popup-form__row">
+            <label class="popup-form__label" for="user_phone">Телефон<span class="required">*</span></label>
+            <input class="popup-form__input input" id="user_phone" type="text" name="user_phone" value="" placeholder="Телефон">
+          </div>
+          <div class="popup-form__row">
+            <label class="popup-form__label" for="user_login">Email / логин<span class="required">*</span></label>
+            <input class="popup-form__input input" id="user_login" type="text" name="user_login" value="" placeholder="Email / логин">
+          </div>
+          <div class="popup-form__row">
+            <label class="popup-form__label" for="pass">Пароль<span class="required">*</span></label>
+            <input class="popup-form__input input" id="pass" type="password" name="pass" value="" placeholder="Пароль">
+          </div>
+          <div class="popup-form__row">
+            <label class="popup-form__label" for="repass">Повторите пароль<span class="required">*</span></label>
+            <input class="popup-form__input input" id="repass" type="password" name="repass" value="" placeholder="Повторите пароль">
+          </div>
+          <div class="popup-form__row">
+            <label for="terms">
+              <input id="terms" type="checkbox">
+              Я прочитал <a href="#" target="_blank">Условия соглашения</a> и согласен с ними
+            </label>
+          </div>
+          <button class="button" type="button">Создать аккаунт</button>
+        </form>
+      </div>
+    </div>
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
     <script type="text/javascript" src="js/main.js?v1"></script>
   </body>
 </html>

@@ -12,7 +12,7 @@
     bottom: 40px
     color: #fff
     cursor: pointer
-    display: flex
+    display: none
     font-family: 'Ionicons'
     font-weight: 700
     height: 40px
@@ -24,6 +24,9 @@
     top: auto
     width: 40px
     z-index: 1
+
+    @media(min-width: 992px)
+      display: block
 
     &::before
       content: '\f3d0'

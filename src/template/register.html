@@ -1,0 +1,41 @@
+<div id="register-form" class="popup-form">
+  <div class="popup-form__title-block">
+    <p class="popup-form__title">Регистрация</p>
+    <button class="js-popup-close popup-form__close" type="button" title="Закрыть"><i class="ion-ios-close-circle"></i></button>
+  </div>
+  <div class="popup-form__content">
+    <form action="/" method="post">
+      <div class="popup-form__row">
+        <label class="popup-form__label" for="user_name">Имя<span class="required">*</span></label>
+        <input class="popup-form__input input" id="user_name" type="text" name="user_name" value="" placeholder="Имя">
+      </div>
+      <div class="popup-form__row">
+        <label class="popup-form__label" for="user_lastname">Фамилия</label>
+        <input class="popup-form__input input" id="user_lastname" type="text" name="user_lastname" value="" placeholder="Фамилия">
+      </div>
+      <div class="popup-form__row">
+        <label class="popup-form__label" for="user_phone">Телефон<span class="required">*</span></label>
+        <input class="popup-form__input input" id="user_phone" type="text" name="user_phone" value="" placeholder="Телефон">
+      </div>
+      <div class="popup-form__row">
+        <label class="popup-form__label" for="user_login">Email / логин<span class="required">*</span></label>
+        <input class="popup-form__input input" id="user_login" type="text" name="user_login" value="" placeholder="Email / логин">
+      </div>
+      <div class="popup-form__row">
+        <label class="popup-form__label" for="pass">Пароль<span class="required">*</span></label>
+        <input class="popup-form__input input" id="pass" type="password" name="pass" value="" placeholder="Пароль">
+      </div>
+      <div class="popup-form__row">
+        <label class="popup-form__label" for="repass">Повторите пароль<span class="required">*</span></label>
+        <input class="popup-form__input input" id="repass" type="password" name="repass" value="" placeholder="Повторите пароль">
+      </div>
+      <div class="popup-form__row">
+        <label for="terms">
+          <input id="terms" type="checkbox">
+          Я прочитал <a href="#" target="_blank">Условия соглашения</a> и согласен с ними
+        </label>
+      </div>
+      <button class="button" type="button">Создать аккаунт</button>
+    </form>
+  </div>
+</div>

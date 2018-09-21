@@ -71,4 +71,31 @@ $(document).ready(function() {
         event.stopPropagation();
     }
   });
+
+  //открытие попапа регистрации
+  $("[data-fancybox='register']").fancybox({
+    touch: false,
+    infobar: false,
+    toolbar: false,
+    smallBtn: false,
+    buttons: ["close"],
+    animationEffect: false,
+    arrows: false
+	});
+
+  //открытие попапа авторизации
+  $("[data-fancybox='login']").fancybox({
+    modal: false,
+    infobar: false,
+    toolbar: false,
+    smallBtn: false,
+    animationEffect: false,
+    arrows: false
+	});
+
+  //закрытие попапа обратной связи
+  $('.js-popup-close').on('click', function() {
+  	$.fancybox.close();
+  	return false;
+  });
 });
