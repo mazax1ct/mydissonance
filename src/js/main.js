@@ -21,13 +21,35 @@ $(document).ready(function() {
   //слайдер баннер
   if ($('.js-main-banner').length) {
     $('.js-main-banner').slick({
-      arrows: true,
-      dots: false,
-      prevArrow: '<button class="slick-prev" type="button" title="Назад"><i class="ion-ios-arrow-back"></i></button>',
-      nextArrow: '<button class="slick-next" type="button" title="Вперед"><i class="ion-ios-arrow-forward"></i></button>'
+      mobileFirst: true,
+      autoplay: true,
+      arrows: false,
+      dots: true,
+      responsive: [
+        {
+          breakpoint: 991,
+          settings: {
+            arrows: true,
+            dots: false,
+            prevArrow: '<button class="slick-prev" type="button" title="Назад"><i class="ion-ios-arrow-back"></i></button>',
+            nextArrow: '<button class="slick-next" type="button" title="Вперед"><i class="ion-ios-arrow-forward"></i></button>',
+          }
+        }
+      ]
     });
   }
 
+  //скролл к контенту
+  $('.banner-block__button').click(function() {
+    if($('body').width()> 1199){
+      var scroll = $('.page-content').offset().top - 60;
+    } else {
+      var scroll = $('.page-content').offset().top;
+    }
+    $('body, html').animate({
+        scrollTop: scroll
+    }, 300);
+  })
   //открытие/закрытие меню на мобильном
   $(".js-categories-menu").click(function() {
     $(this).toggleClass("is-active");
