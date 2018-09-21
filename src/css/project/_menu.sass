@@ -1,0 +1,99 @@
+.categories-menu
+	position: relative
+
+	&--desktop
+		display: none
+
+		@media(min-width: 992px)
+			display: block
+
+		.categories-menu__opener
+			border-radius: 0
+			height: 60px
+
+	&--mobile
+		@media(min-width: 992px)
+			display: none
+
+	&__opener
+		background-color: #e23e57
+		border-radius: 3px
+		border: none
+		cursor: pointer
+		color: #fff
+		display: flex
+		font-size: 18px
+		justify-content: space-between
+		line-height: 30px
+		padding: 10px 15px
+		width: 100%
+
+		&.is-active
+			.categories-menu__icon
+				transform: rotate(-180deg)
+
+	&__title
+		text-transform: uppercase
+
+	&__icon
+		padding: 0 10px
+
+		&::before
+			content: "\f3d0"
+			font-family: 'Ionicons'
+
+	&__list
+		background-color: #faf8f8
+		box-shadow: 0 0 3px 0 rgba(0,0,0,.3)
+		display: none
+		font-size: 14px
+		left: 0
+		list-style: none
+		margin: 0
+		padding: 0
+		position: absolute
+		top: 100%
+		width: 100%
+
+	&__list-item
+		padding: 0
+		margin: 0
+
+	&__link
+		border-bottom: 1px solid #e1e4eb
+		cursor: pointer
+		display: block
+		line-height: 40px
+		padding-left: 15px
+		padding-right: 15px
+		text-decoration: none
+		text-transform: capitalize
+
+.main-menu
+	display: none
+	font-size: 13px
+
+	@media(min-width: 992px)
+		display: flex
+
+	@media(min-width: 1200px)
+		font-size: 15px
+
+	&__link
+		color: #2c2c2c
+		display: inline-block
+		font-weight: 600
+		line-height: 24px
+		margin-right: 5px
+		padding: 18px 8px
+		text-decoration: none
+		text-transform: uppercase
+		vertical-align: top
+
+		@media(min-width: 1200px)
+			margin-right: 10px
+			padding-left: 15px
+			padding-right: 15px
+
+		&:last-child
+			margin-right: 0

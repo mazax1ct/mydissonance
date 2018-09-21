@@ -1,0 +1,34 @@
+html
+  box-sizing: border-box
+  height: 100%
+
+*,
+*::after,
+*::before
+  box-sizing: inherit
+
+body
+  background-color: #f7f7f7
+  height: 100%
+  min-height: 100%
+  min-width: 320px
+  overflow-wrap: break-word
+  position: relative
+
+.wrapper
+  @media (min-width: 992px)
+    min-height: 100%
+    height: auto !important
+    height: 100%
+    margin-bottom: -260px
+
+  &::after
+    @media (min-width: 992px)
+      content: ""
+      display: block
+      height: 260px
+      width: 100%
+
+.page-content
+  padding-top: 30px
+  padding-bottom: 30px

@@ -1,0 +1,310 @@
+.header
+	background-color: #fff
+
+	&__top
+		position: relative
+		z-index: 2
+
+	&__bottom
+		min-height: 60px
+		position: relative
+		z-index: 1
+
+	&__bottom-inner
+		background-color: #303d4e
+
+		&.scrolled
+			@media(min-width: 1200px)
+				left: 0
+				position: fixed
+				top: 0
+				width: 100%
+				z-index: 100
+
+	&__inner
+		position: relative
+
+		@media(max-width: 991px)
+			display: flex
+			flex-wrap: wrap
+			justify-content: space-between
+
+	&__menu
+		position: relative
+		width: 100%
+		z-index: 2
+
+		@media(min-width: 992px)
+			left: 0
+			padding-right: 245px
+			padding-left: 290px
+			position: absolute
+			right: 0
+			top: 50%
+			transform: translateY(-50%)
+			text-align: right
+
+		@media(min-width: 1200px)
+			padding-left: 298px
+			padding-right: 300px
+
+	&__cart
+		display: inline-block
+		margin: 15px 0
+		position: relative
+		z-index: 1
+
+		@media(min-width: 992px)
+			margin-top: 0
+			margin-bottom: 0
+			position: absolute
+			right: 115px
+			top: 50%
+			transform: translateY(-50%)
+			z-index: 2
+
+		@media(min-width: 1200px)
+			right: 150px
+
+	&__login
+		font-weight: 700
+		margin-top: 15px
+		margin-bottom: 15px
+		text-align: right
+
+		@media(min-width: 992px)
+			margin-top: 0
+			margin-bottom: 0
+			right: 0
+			position: absolute
+			top: 50%
+			transform: translateY(-50%)
+			z-index: 2
+
+		a
+			display: block
+			text-decoration: none
+
+	&__info-block
+		@media(min-width: 540px)
+			display: flex
+			justify-content: space-between
+
+	&__info
+		color: #fff
+		font-size: 12px
+		line-height: 16px
+		margin-top: 6px
+		margin-bottom: 6px
+
+		@media(min-width: 540px)
+			max-width: 155px
+			text-align: right
+
+		p
+			display: inline-block
+			margin-bottom: 0
+			margin-top: 0
+			padding-left: 5px
+			padding-right: 5px
+
+		a
+			color: #fff
+			text-decoration: none
+
+			&:hover
+				color: #e23e57
+
+.logo
+	display: block
+	padding-top: 37px
+	padding-bottom: 37px
+	position: relative
+	text-align: center
+	width: 100%
+	z-index: 2
+
+	@media(min-width: 992px)
+		padding-top: 25px
+		padding-bottom: 25px
+		width: 267px
+
+.small-cart
+	position: relative
+	z-index: 10
+
+	&__button
+		background: none
+		border: none
+		cursor: pointer
+		display: flex
+		position: relative
+		padding: 0
+
+	&__button-icon
+		color: #2c2c2c
+		display: inline-block
+		font-size: 32px
+		font-style: normal
+		line-height: 39px
+		vertical-align: top
+
+	&__button-count
+		background-color: #e23e57
+		color: #fff
+		display: inline-block
+		border-radius: 50%
+		font-weight: 500
+		font-size: 11px
+		height: 23px
+		line-height: 23px
+		margin-top: 8px
+		margin-left: 5px
+		right: 0
+		text-align: center
+		vertical-align: top
+		width: 23px
+
+	&__button-total
+		color: #2c2c2c
+		display: inline-block
+		font-size: 13px
+		font-weight: 400
+		margin-left: 8px
+		text-align: left
+		vertical-align: top
+
+	&__button-price
+		display: block
+		font-size: 15px
+		font-weight: 600
+		margin-top: 2px
+
+	&__dropdown
+		background-color: #fff
+		box-shadow: 0 0 6px 1px rgba(0,0,0,.15)
+		display: none
+		font-size: 14px
+		left: 0
+		margin-top: 11px
+		padding: 15px 20px 30px 20px
+		position: absolute
+		top: 100%
+		width: 250px
+
+		&.is-open
+			display: block
+
+		@media(min-width: 480px)
+			width: 450px
+
+		@media(min-width: 992px)
+			left: auto
+			right: 0
+
+		&::before
+			border: 7px solid
+			border-color: transparent transparent #fff transparent
+			border-bottom-style: solid
+			content: ''
+			display: block
+			height: 0
+			left: 34px
+			position: absolute
+			top: -12px
+			width: 0
+			z-index: 99
+
+			@media(min-width: 992px)
+				left: auto
+				right: 67px
+
+	&__dropdown-list
+		max-height: 300px
+		overflow: auto
+		padding: 0 20px
+		margin: 0 -20px
+
+	&__item-text
+		border-bottom: 1px solid #ebebeb
+		padding: 20px 0
+
+		&:nth-child(2)
+			text-align: right
+
+		a
+			text-decoration: none
+
+	&__item-delete
+		background: none
+		border: none
+		color: #eaeaea
+		cursor: pointer
+		font-size: 22px
+		height: 21px
+		line-height: 1
+		padding: 0
+		transition: color 0.3s
+		width: 21px
+
+		&:hover
+			color: #e23e57
+
+		.ion-ios-close
+			vertical-align: top
+
+	&__item-quantity
+		color: #bfbfbf
+		font-size: 14px
+    line-height: 20px
+		margin-bottom: 0
+		margin-top: 0
+		padding: 5px 0
+
+	&__item-price
+		color: #e23e57
+		font-size: 20px
+		font-weight: 600
+		margin-bottom: 0
+		margin-top: 0
+
+	&__result-price
+		color: #e23e57
+		font-weight: 600
+		font-size: 18px
+		text-align: right
+
+	&__dropdown-buttons
+		margin-bottom: 0
+
+		@media(min-width: 480px)
+			display: flex
+
+	&__dropdown-button
+		border: none
+		background-color: #292929
+		border-radius: 4px
+		color: #fff
+		display: block
+		font-size: 14px
+		font-weight: 400
+		flex-grow: 1
+		line-height: 40px
+		margin-bottom: 15px
+		padding: 0 10px
+		transition: background-color 0.3s
+		text-align: center
+		text-decoration: none
+
+		&:hover
+			background-color: #e23e57
+			color: #fff
+
+		@media(min-width: 480px)
+			margin-bottom: 0
+
+		&:nth-child(2)
+			margin-bottom: 0
+
+			@media(min-width: 480px)
+				margin-left: 5px

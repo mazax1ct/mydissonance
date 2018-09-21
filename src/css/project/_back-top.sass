@@ -1,0 +1,30 @@
+.back-top
+  background-color: rgba(35, 47, 62, 0.7)
+  box-shadow: 0px 0px 1px 1px rgba(255,255,255,.1)
+  bottom: 8px
+  border-radius: 3px
+  cursor: pointer
+  color: #fff
+  display: none
+  height: 40px
+  line-height: 40px
+  position: fixed
+  right: 8px
+  text-align: center
+  transition: background-color 0.3s
+  width: 40px
+  z-index: 100
+
+  &.is-active
+    display: block
+
+  @media(min-width: 1200px)
+    bottom: 30px
+    right: 30px
+
+  &:hover
+    background-color: #e23e57
+    color: #fff
+
+  i
+    font-size: 18px
