@@ -13,6 +13,10 @@
 
   &__thumbs
     display: flex
+    margin-bottom: 20px
+
+    @media(min-width: 768px)
+      margin-bottom: 0
 
   &__thumb
     border: 1px solid #ededed
@@ -20,21 +24,26 @@
     margin-right: 5px
     padding: 5px
 
-
   &__author
     color: #232f3e
-    font-size: 20px
-    font-weight: 400
+    margin-bottom: 0
+    margin-top: 0
+
+    @media(min-width: 992px)
+      font-size: 20px
 
     a
       text-decoration: none
 
   &__title
     color: #232f3e
-    font-size: 24px
+    font-size: 20px
     font-weight: 700
     margin-top: 0
     margin-bottom: 10px
+
+    @media(min-width: 992px)
+      font-size: 24px
 
   &__info
     align-items: center
@@ -71,9 +80,11 @@
     margin-left: 5px
 
   &__attribute
-    font-size: 15px
     margin-top: 0
     margin-bottom: 10px
+
+    @media(min-width: 992px)
+      font-size: 15px
 
     label
       color: #666
@@ -87,7 +98,7 @@
     border-top: 1px solid #e6e6e6
     border-bottom: 1px solid #e6e6e6
     display: flex
-    justify-content: flex-end
+    justify-content: space-between
     margin-top: 10px
     margin-bottom: 10px
     padding-top: 10px

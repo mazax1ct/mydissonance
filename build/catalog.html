@@ -223,6 +223,10 @@
     </header>
     <div class="page-content">
       <div class="container">
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="main.html"><i class="ion-ios-home"></i></a></li>
+          <li class="breadcrumbs__item">Каталог</li>
+        </ul>
         <div class="row">
           <div class="col-lg-3">
             <div class="col-filter">
@@ -257,9 +261,9 @@
                   <div class="slider-data">
                     Цена:
                     <span class="data">
-      								от <input value="15" min="15" max="35000" data-type="min" data-name="price-min" style="width: 16px;" type="number">
-      								до <input value="35000" min="15" max="35000" data-type="max" data-name="price-max" style="width: 40px;" type="number">
-      							</span>
+                      от <input value="15" min="15" max="35000" data-type="min" data-name="price-min" style="width: 16px;" type="number">
+                      до <input value="35000" min="15" max="35000" data-type="max" data-name="price-max" style="width: 40px;" type="number">
+                    </span>
                     <span class="add-info">р.</span>
                   </div>
                 </div>
@@ -273,23 +277,23 @@
                 <div class="col-md-5ths item">
                   <div class="image" style="background-position: 0px 0px;"></div>
                   <input data-name="vinyl_state[]" data-value="1" type="hidden">
-      					</div>
+                </div>
                 <div class="col-md-5ths item">
                   <div class="image" style="background-position: -48px 0px;"></div>
                   <input data-name="vinyl_state[]" data-value="2" type="hidden">
-  							</div>
+                </div>
                 <div class="col-md-5ths item">
                   <div class="image" style="background-position: -96px 0px;"></div>
                   <input data-name="vinyl_state[]" data-value="3" type="hidden">
-  							</div>
+                </div>
                 <div class="col-md-5ths item">
                   <div class="image" style="background-position: -144px 0px;"></div>
                   <input data-name="vinyl_state[]" data-value="4" type="hidden">
-							  </div>
+                </div>
                 <div class="col-md-5ths item">
                   <div class="image" style="background-position: -192px 0px;"></div>
                   <input data-name="vinyl_state[]" data-value="5" type="hidden">
-						    </div>
+                </div>
               </div>
             </div>
             <div class="col-filter">
@@ -301,23 +305,23 @@
                 <div class="col-md-5ths item" data-value="1">
                   <div class="image" style="background-position: 0px -35px;"></div>
                   <input data-name="cover_state[]" data-value="1" type="hidden">
-				        </div>
+                </div>
                 <div class="col-md-5ths item" data-value="2">
                   <div class="image" style="background-position: -48px -35px;"></div>
                   <input data-name="cover_state[]" data-value="2" type="hidden">
-				        </div>
+                </div>
                 <div class="col-md-5ths item" data-value="3">
                   <div class="image" style="background-position: -96px -35px;"></div>
                   <input data-name="cover_state[]" data-value="3" type="hidden">
-			          </div>
+                </div>
                 <div class="col-md-5ths item" data-value="4">
                   <div class="image" style="background-position: -144px -35px;"></div>
                   <input data-name="cover_state[]" data-value="4" type="hidden">
-		            </div>
+                </div>
                 <div class="col-md-5ths item" data-value="5">
                   <div class="image" style="background-position: -192px -35px;"></div>
                   <input data-name="cover_state[]" data-value="5" type="hidden">
-	              </div>
+                </div>
               </div>
             </div>
             <div class="col-filter">
@@ -330,9 +334,9 @@
                   <div class="slider-data">
                     Выпущена:
                     <span class="data">
-    									с <input value="1958" min="1958" max="2019" data-type="min" data-name="year-min" style="width: 32px;" type="number">
-    									по <input value="2019" min="1958" max="2019" data-type="max" data-name="year-max" style="width: 32px;" type="number">
-    								</span>
+                      с <input value="1958" min="1958" max="2019" data-type="min" data-name="year-min" style="width: 32px;" type="number">
+                      по <input value="2019" min="1958" max="2019" data-type="max" data-name="year-max" style="width: 32px;" type="number">
+                    </span>
                     <span class="add-info">гг.</span>
                   </div>
                 </div>
@@ -356,12 +360,27 @@
           </div>
           <div class="col-lg-9">
             <div class="catalog-section">
+              <div class="catalog-section__title">
+                <h1>Каталог</h1>
+                <div class="catalog-section__sorter">
+                  <label>Сортировка:</label>
+                  <select>
+                    <option>По умолчанию</option>
+                    <option>Название (А - Я)</option>
+                    <option>Название (Я - А)</option>
+                    <option>Цена (низкая &gt; высокая)</option>
+                    <option>Цена (высокая &gt; низкая)</option>
+                    <option>Модель (А - Я)</option>
+                    <option>Модель (Я - А)</option>
+                  </select>
+                </div>
+              </div>
               <div class="row">
                 <div class="col-md-4">
                   <div class="product">
                     <a class="product__image" href="catalog-detail.html"><img src="images/content/img3.JPG" alt=""></a>
                     <div class="product__description">
-                      <p class="product__author"><a href="singer.html">Sia</a></p>
+                      <p class="product__author"><a href="catalog-singer.html">Sia</a></p>
                       <p class="product__title"><a href="catalog-detail.html">1000 Forms Of Fear (2014)</a></p>
                       <div class="product__info">
                         <div class="product__state">
@@ -385,7 +404,7 @@
                   <div class="product">
                     <a class="product__image" href="catalog-detail.html"><img src="images/content/img4.JPG" alt=""></a>
                     <div class="product__description">
-                      <p class="product__author"><a href="singer.html">Asha Puthli</a></p>
+                      <p class="product__author"><a href="catalog-singer.html">Asha Puthli</a></p>
                       <p class="product__title"><a href="catalog-detail.html">1001 Nights Of Love (1979)</a></p>
                       <div class="product__info">
                         <div class="product__state">
@@ -409,7 +428,7 @@
                   <div class="product">
                     <a class="product__image" href="catalog-detail.html"><img src="images/content/img6.JPG" alt=""></a>
                     <div class="product__description">
-                      <p class="product__author"><a href="singer.html">Depeche Mode</a></p>
+                      <p class="product__author"><a href="catalog-singer.html">Depeche Mode</a></p>
                       <p class="product__title"><a href="catalog-detail.html">101 (1989)</a></p>
                       <div class="product__info">
                         <span class="product__state-title">Excellent+</span>
@@ -427,7 +446,7 @@
                   <div class="product">
                     <a class="product__image" href="catalog-detail.html"><img src="images/content/img7.JPG" alt=""></a>
                     <div class="product__description">
-                      <p class="product__author"><a href="singer.html">Black Sabbath</a></p>
+                      <p class="product__author"><a href="catalog-singer.html">Black Sabbath</a></p>
                       <p class="product__title"><a href="catalog-detail.html">13 (2013)</a></p>
                       <div class="product__info">
                         <div class="product__state">
@@ -451,7 +470,7 @@
                   <div class="product">
                     <a class="product__image" href="catalog-detail.html"><img src="images/content/img8.JPG" alt=""></a>
                     <div class="product__description">
-                      <p class="product__author"><a href="singer.html">Asha Puthli</a></p>
+                      <p class="product__author"><a href="catalog-singer.html">Asha Puthli</a></p>
                       <p class="product__title"><a href="catalog-detail.html">1001 Nights Of Love (1979)</a></p>
                       <div class="product__info">
                         <div class="product__state">
@@ -475,7 +494,7 @@
                   <div class="product">
                     <a class="product__image" href="catalog-detail.html"><img src="images/content/img9.JPG" alt=""></a>
                     <div class="product__description">
-                      <p class="product__author"><a href="singer.html">Depeche Mode</a></p>
+                      <p class="product__author"><a href="catalog-singer.html">Depeche Mode</a></p>
                       <p class="product__title"><a href="catalog-detail.html">101 (1989)</a></p>
                       <div class="product__info">
                         <span class="product__state-title">Excellent+</span>

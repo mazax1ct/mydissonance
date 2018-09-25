@@ -121,4 +121,13 @@ $(document).ready(function() {
         scrollTop: scrollTo
     }, 300);
   });
+
+  if ($('.js-about-slider').length) {
+    $('.js-about-slider').slick({
+      mobileFirst: true,
+      autoplay: true,
+      arrows: false,
+      dots: true
+    });
+  }
 });
