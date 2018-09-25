@@ -1,0 +1,28 @@
+.pager
+  align-items: center
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  margin-top: 25px
+
+  &__item
+    margin: 5px
+
+  &__link
+    background-color: rgba(35, 47, 62, 0.7)
+    border-radius: 3px
+    cursor: pointer
+    color: #fff
+    display: block
+    height: 40px
+    line-height: 40px
+    right: 8px
+    text-align: center
+    transition: background-color 0.3s
+    text-decoration: none
+    width: 40px
+
+    &:hover,
+    &.is-active
+      background-color: #e23e57
+      color: #fff

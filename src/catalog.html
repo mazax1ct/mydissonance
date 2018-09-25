@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  <title>Mydissonance - Каталог</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i&amp;subset=cyrillic" rel="stylesheet">
+
+  //= template/style.html
+</head>
+
+<body id="top">
+  <div class="wrapper">
+    //= template/header.html
+    <div class="page-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="col-filter">
+              <h3>Найти</h3>
+              <div class="search-input">
+                <input class="" name="" type="text" value="" placeholder="Исполнитель">
+              </div>
+              <div class="search-input">
+                <input class="" name="" type="text" value="" placeholder="Альбом">
+              </div>
+              <div class="search-input">
+                <input class="" name="" type="text" value="" placeholder="Год">
+              </div>
+              <div class="search-input">
+                <input class="" name="" type="text" value="" placeholder="Страна">
+              </div>
+              <div class="search-input">
+                <input class="" name="" type="text" value="" placeholder="Лейбл">
+              </div>
+              <a class="button btn-small" href="#">Смотреть все</a>
+            </div>
+            <div class="col-filter">
+              <h3>Выбрать</h3>
+            </div>
+            <div class="col-filter">
+              <div class="filter-input">
+                <label>Цена пластинки</label>
+                <div class="filter-slider">
+                  <div class="range-slider ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content" data-min="15" data-max="35000">
+                    <div class="ui-slider-range ui-corner-all ui-widget-header" style="left: 0%; width: 100%;"></div><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 0%;"></span><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 100%;"></span>
+                  </div>
+                  <div class="slider-data">
+                    Цена:
+                    <span class="data">
+      								от <input value="15" min="15" max="35000" data-type="min" data-name="price-min" style="width: 16px;" type="number">
+      								до <input value="35000" min="15" max="35000" data-type="max" data-name="price-max" style="width: 40px;" type="number">
+      							</span>
+                    <span class="add-info">р.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-filter">
+              <div class="filter-input">
+                <label>Состояние пластинки</label>
+              </div>
+              <div class="filter-image-list clearfix vinyl-state">
+                <div class="col-md-5ths item">
+                  <div class="image" style="background-position: 0px 0px;"></div>
+                  <input data-name="vinyl_state[]" data-value="1" type="hidden">
+      					</div>
+                <div class="col-md-5ths item">
+                  <div class="image" style="background-position: -48px 0px;"></div>
+                  <input data-name="vinyl_state[]" data-value="2" type="hidden">
+  							</div>
+                <div class="col-md-5ths item">
+                  <div class="image" style="background-position: -96px 0px;"></div>
+                  <input data-name="vinyl_state[]" data-value="3" type="hidden">
+  							</div>
+                <div class="col-md-5ths item">
+                  <div class="image" style="background-position: -144px 0px;"></div>
+                  <input data-name="vinyl_state[]" data-value="4" type="hidden">
+							  </div>
+                <div class="col-md-5ths item">
+                  <div class="image" style="background-position: -192px 0px;"></div>
+                  <input data-name="vinyl_state[]" data-value="5" type="hidden">
+						    </div>
+              </div>
+            </div>
+            <div class="col-filter">
+              <div class="filter-input">
+                <label>Состояние конверта</label>
+              </div>
+              <div class="filter-image-list clearfix cover-state">
+                <input data-name="cover_state" type="hidden">
+                <div class="col-md-5ths item" data-value="1">
+                  <div class="image" style="background-position: 0px -35px;"></div>
+                  <input data-name="cover_state[]" data-value="1" type="hidden">
+				        </div>
+                <div class="col-md-5ths item" data-value="2">
+                  <div class="image" style="background-position: -48px -35px;"></div>
+                  <input data-name="cover_state[]" data-value="2" type="hidden">
+				        </div>
+                <div class="col-md-5ths item" data-value="3">
+                  <div class="image" style="background-position: -96px -35px;"></div>
+                  <input data-name="cover_state[]" data-value="3" type="hidden">
+			          </div>
+                <div class="col-md-5ths item" data-value="4">
+                  <div class="image" style="background-position: -144px -35px;"></div>
+                  <input data-name="cover_state[]" data-value="4" type="hidden">
+		            </div>
+                <div class="col-md-5ths item" data-value="5">
+                  <div class="image" style="background-position: -192px -35px;"></div>
+                  <input data-name="cover_state[]" data-value="5" type="hidden">
+	              </div>
+              </div>
+            </div>
+            <div class="col-filter">
+              <div class="filter-input">
+                <label>Год выпуска пластинки</label>
+                <div class="filter-slider">
+                  <div class="range-slider ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content" data-min="1958" data-max="2019">
+                    <div class="ui-slider-range ui-corner-all ui-widget-header" style="left: 0%; width: 100%;"></div><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 0%;"></span><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 100%;"></span>
+                  </div>
+                  <div class="slider-data">
+                    Выпущена:
+                    <span class="data">
+    									с <input value="1958" min="1958" max="2019" data-type="min" data-name="year-min" style="width: 32px;" type="number">
+    									по <input value="2019" min="1958" max="2019" data-type="max" data-name="year-max" style="width: 32px;" type="number">
+    								</span>
+                    <span class="add-info">гг.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-filter">
+              <div class="filter-input">
+                <label>Тип пластинки</label>
+              </div>
+              <div class="filter-list clearfix">
+                <input data-name="vinyl_type" type="hidden">
+                <div class="item" data-value="1">
+                  <span class="checkmark"></span>
+                  <span>Цветной винил</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-filter">
+              <a class="button btn-small" href="#">Сбросить фильтр</a>
+            </div>
+          </div>
+          <div class="col-lg-9">
+            <div class="catalog-section">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="product">
+                    <a class="product__image" href="#"><img src="images/content/img3.jpg" alt=""></a>
+                    <div class="product__description">
+                      <p class="product__author"><a href="#">Sia</a></p>
+                      <p class="product__title"><a href="#">1000 Forms Of Fear (2014)</a></p>
+                      <div class="product__info">
+                        <div class="product__state">
+                          <span class="product__state-icon product__state-icon--vinyl"></span>
+                          <span class="product__state-title">Excellent+</span>
+                        </div>
+                        <div class="product__state">
+                          <span class="product__state-icon product__state-icon--cover"></span>
+                          <span class="product__state-title">Excellent-</span>
+                        </div>
+                      </div>
+                      <p class="product__production">Европейский союз, Sony Music, 2014</p>
+                      <p class="product__price-block">
+                        <span class="product__price">1500р.</span>
+                        <a class="button button--small button--red" href="#">Купить</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="product">
+                    <a class="product__image" href="#"><img src="images/content/img4.jpg" alt=""></a>
+                    <div class="product__description">
+                      <p class="product__author"><a href="#">Asha Puthli</a></p>
+                      <p class="product__title"><a href="#">1001 Nights Of Love (1979)</a></p>
+                      <div class="product__info">
+                        <div class="product__state">
+                          <span class="product__state-icon product__state-icon--vinyl"></span>
+                          <span class="product__state-title">Excellent+</span>
+                        </div>
+                        <div class="product__state">
+                          <span class="product__state-icon product__state-icon--cover"></span>
+                          <span class="product__state-title">Excellent-</span>
+                        </div>
+                      </div>
+                      <p class="product__production">Германия, Autobahn, 1979</p>
+                      <p class="product__price-block">
+                        <span class="product__price">850р.</span>
+                        <a class="button button--small button--red" href="#">Купить</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="product">
+                    <a class="product__image" href="#"><img src="images/content/img6.jpg" alt=""></a>
+                    <div class="product__description">
+                      <p class="product__author"><a href="#">Depeche Mode</a></p>
+                      <p class="product__title"><a href="#">101 (1989)</a></p>
+                      <div class="product__info">
+                        <span class="product__state-title">Excellent+</span>
+                        <span class="product__state-sealed">(Запечатана)</span>
+                      </div>
+                      <p class="product__production">Европейский союз, Sony Music, 2016</p>
+                      <p class="product__price-block">
+                        <span class="product__price">2000р.</span>
+                        <a class="button button--small button--red" href="#">Купить</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="product">
+                    <a class="product__image" href="#"><img src="images/content/img7.jpg" alt=""></a>
+                    <div class="product__description">
+                      <p class="product__author"><a href="#">Black Sabbath</a></p>
+                      <p class="product__title"><a href="#">13 (2013)</a></p>
+                      <div class="product__info">
+                        <div class="product__state">
+                          <span class="product__state-icon product__state-icon--vinyl"></span>
+                          <span class="product__state-title">Excellent+</span>
+                        </div>
+                        <div class="product__state">
+                          <span class="product__state-icon product__state-icon--cover"></span>
+                          <span class="product__state-title">Excellent-</span>
+                        </div>
+                      </div>
+                      <p class="product__production">Европейский союз, Universal, 2013</p>
+                      <p class="product__price-block">
+                        <span class="product__price">1850р.</span>
+                        <a class="button button--small button--red" href="#">Купить</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="product">
+                    <a class="product__image" href="#"><img src="images/content/img8.jpg" alt=""></a>
+                    <div class="product__description">
+                      <p class="product__author"><a href="#">Asha Puthli</a></p>
+                      <p class="product__title"><a href="#">1001 Nights Of Love (1979)</a></p>
+                      <div class="product__info">
+                        <div class="product__state">
+                          <span class="product__state-icon product__state-icon--vinyl"></span>
+                          <span class="product__state-title">Excellent+</span>
+                        </div>
+                        <div class="product__state">
+                          <span class="product__state-icon product__state-icon--cover"></span>
+                          <span class="product__state-title">Excellent-</span>
+                        </div>
+                      </div>
+                      <p class="product__production">Германия, Autobahn, 1979</p>
+                      <p class="product__price-block">
+                        <span class="product__price">850р.</span>
+                        <a class="button button--small button--red" href="#">Купить</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="product">
+                    <a class="product__image" href="#"><img src="images/content/img9.jpg" alt=""></a>
+                    <div class="product__description">
+                      <p class="product__author"><a href="#">Depeche Mode</a></p>
+                      <p class="product__title"><a href="#">101 (1989)</a></p>
+                      <div class="product__info">
+                        <span class="product__state-title">Excellent+</span>
+                        <span class="product__state-sealed">(Запечатана)</span>
+                      </div>
+                      <p class="product__production">Европейский союз, Sony Music, 2016</p>
+                      <p class="product__price-block">
+                        <span class="product__price">2000р.</span>
+                        <a class="button button--small button--red" href="#">Купить</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <ul class="pager">
+              <li class="pager__item"><a class="pager__link" href="#">&lt;</a></li>
+              <li class="pager__item"><span class="pager__link is-active">1</span></li>
+              <li class="pager__item"><a class="pager__link" href="#">2</a></li>
+              <li class="pager__item"><a class="pager__link" href="#">3</a></li>
+              <li class="pager__item"><a class="pager__link" href="#">4</a></li>
+              <li class="pager__item"><a class="pager__link" href="#">...</a></li>
+              <li class="pager__item"><a class="pager__link" href="#">10</a></li>
+              <li class="pager__item"><a class="pager__link" href="#">11</a></li>
+              <li class="pager__item"><a class="pager__link" href="#">12</a></li>
+              <li class="pager__item"><a class="pager__link" href="#">&gt;</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  //= template/footer.html
+  <a class="js-to-top back-top" href="#top"><i class="icon ion-ios-arrow-up"></i></a>
+  //= template/login.html
+  //= template/register.html
+  //= template/scripts.html
+</body>
+</html>

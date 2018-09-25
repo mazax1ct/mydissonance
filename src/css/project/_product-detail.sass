@@ -1,0 +1,121 @@
+.product-detail
+  background-color: #fff
+  border: 1px solid #ededed
+  padding: 20px
+
+  &__zoom-cotainer
+    border: 1px solid #ededed
+    margin-bottom: 10px
+    padding: 5px
+
+    .zoomWrapper
+      position: relative
+
+  &__thumbs
+    display: flex
+
+  &__thumb
+    border: 1px solid #ededed
+    margin-bottom: 5px
+    margin-right: 5px
+    padding: 5px
+
+
+  &__author
+    color: #232f3e
+    font-size: 20px
+    font-weight: 400
+
+    a
+      text-decoration: none
+
+  &__title
+    color: #232f3e
+    font-size: 24px
+    font-weight: 700
+    margin-top: 0
+    margin-bottom: 10px
+
+  &__info
+    align-items: center
+    display: flex
+    font-size: 13px
+    margin-bottom: 10px
+
+  &__state
+    align-items: center
+    display: flex
+    margin-right: 10px
+
+  &__state-icon
+    display: inline-block
+    width: 16px
+    height: 16px
+    margin-right: 3px
+    background-image: url('../images/icons/catalog_conditions.png')
+
+    &--vinyl
+      background-position: 0 0
+
+    &--cover
+      background-position: 16px 0
+
+  &__state-title
+    color: #e23e57
+    font-weight: 600
+    text-decoration: underline
+    text-transform: uppercase
+
+  &__state-sealed
+    color: #a9a9a9
+    margin-left: 5px
+
+  &__attribute
+    font-size: 15px
+    margin-top: 0
+    margin-bottom: 10px
+
+    label
+      color: #666
+
+    span
+      color: #2c2c2c
+      font-weight: 600
+
+  &__price-block
+    align-items: center
+    border-top: 1px solid #e6e6e6
+    border-bottom: 1px solid #e6e6e6
+    display: flex
+    justify-content: flex-end
+    margin-top: 10px
+    margin-bottom: 10px
+    padding-top: 10px
+    padding-bottom: 10px
+
+  &__price
+    color: #2c2c2c
+    font-size: 32px
+    font-weight: 700
+    margin-right: 10px
+
+  &__buy-button
+    &::before
+      content: "\f3f8"
+      font-size: 21px
+      font-family: "Ionicons"
+      line-height: 1
+      vertical-align: middle
+      margin-right: 7px
+
+  &__tracks
+    ol
+      max-height: 315px
+      overflow: auto
+
+  &__tracks-title
+    color: #232f3e
+    font-size: 18px
+    font-weight: 700
+    margin-bottom: 5px
+    margin-top: 0

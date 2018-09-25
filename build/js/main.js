@@ -1,5 +1,7 @@
-//активация кнопки "наверх"
+//активация кнопки "наверх", залипание части шапки, закрытие корзины
 $(window).scroll(function () {
+  $(".small-cart__dropdown").removeClass('is-open');
+
   if ($(this).scrollTop() > 100) {
     $('.header__bottom-inner').addClass('scrolled');
     $('.js-to-top').addClass('is-active');
@@ -49,7 +51,8 @@ $(document).ready(function() {
     $('body, html').animate({
         scrollTop: scroll
     }, 300);
-  })
+  });
+
   //открытие/закрытие меню на мобильном
   $(".js-categories-menu").click(function() {
     $(this).toggleClass("is-active");
@@ -73,7 +76,7 @@ $(document).ready(function() {
   });
 
   //открытие попапа регистрации
-  $("[data-fancybox='register']").fancybox({
+  $("[data-fancybox='form-popup']").fancybox({
     touch: false,
     infobar: false,
     toolbar: false,
@@ -83,19 +86,39 @@ $(document).ready(function() {
     arrows: false
 	});
 
-  //открытие попапа авторизации
-  $("[data-fancybox='login']").fancybox({
-    modal: false,
-    infobar: false,
-    toolbar: false,
-    smallBtn: false,
-    animationEffect: false,
-    arrows: false
-	});
-
-  //закрытие попапа обратной связи
+  //закрытие попапа
   $('.js-popup-close').on('click', function() {
   	$.fancybox.close();
   	return false;
+  });
+
+  //маска для поля ввода телефона
+  if ($(".js-phone").length) {
+    $(".js-phone").mask("+7 (999) 999-99-99");
+  }
+
+  //зум картинок на деталке
+  if ($('#zoom').length) {
+    $("#zoom").elevateZoom({
+      gallery:'gallery',
+      cursor: 'pointer',
+      galleryActiveClass: 'active',
+      imageCrossfade: true,
+      loadingIcon: 'http://www.elevateweb.co.uk/spinner.gif',
+      zoomWindowOffetx: 10,
+      zoomWindowOffety: -3
+    });
+  }
+
+  //скролл к блоку алфавита
+  $('.alphabeth__list a').click(function () {
+    if($('body').width()> 1199){
+      var scrollTo = $($(this).attr('href')).offset().top - 60;
+    } else {
+      var scrollTo = $($(this).attr('href')).offset().top;
+    }
+    $('body, html').animate({
+        scrollTop: scrollTo
+    }, 300);
   });
 });
