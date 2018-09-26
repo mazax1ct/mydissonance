@@ -2219,50 +2219,10 @@ a.thumbnail.active {
 	margin: 0;
 }
 
-#input-quantity2,
-#minus2,
-#plus2,
-#input-quantity,
-#minus,
-#plus {
-	height: 48px;
-	box-shadow: none;
-	font-weight: 400;
-	text-align: center;
-	width: 25px;
-	font-size: 15px;
-	border-radius: 0px;
-	border: 1px solid #ededed;
-	padding: 0;
-	color: #666;
-	float: left;
-	background: #fff;
-}
-
-#input-quantity2,
-#input-quantity {
-	width: 92px;
-	min-width: auto;
-	border-left: 0;
-	border-right: 0;
-}
-
 .product-info-main .form-group {
 	display:inline-block;
 	vertical-align: top;
 	width: 100%;
-}
-
-label[for='input-quantity'] {
-	line-height: 32px;
-	padding: 8px 0;
-	margin-right: 30px;
-	margin-bottom: 0;
-	color: #2c2c2c;
-	font-size: 14px;
-	text-transform: capitalize;
-	font-weight: 500;
-	float: left;
 }
 
 .product-info-main .button-cart {

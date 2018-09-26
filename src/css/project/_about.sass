@@ -57,12 +57,33 @@
   .col-md-4
     align-items: center
     background-color: #fff
+    border-left: 1px solid #ededed
+    border-right: 1px solid #ededed
     color: #777
     display: flex
     padding-top: 10px
     padding-bottom: 10px
 
+    &:first-child
+      border-top: 1px solid #ededed
+
+      @media(min-width: 768px)
+        border-right: none
+
+    &:last-child
+      border-bottom: 1px solid #ededed
+
+      @media(min-width: 768px)
+        border-left: none
+
+    &:nth-child(2)
+      @media(min-width: 768px)
+        border-left: none
+        border-right: none
+
     @media(min-width: 768px)
+      border-top: 1px solid #ededed
+      border-bottom: 1px solid #ededed
       padding-top: 20px
       padding-bottom: 20px
 

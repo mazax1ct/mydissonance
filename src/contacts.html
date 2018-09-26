@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  <title>Mydissonance - Контакты</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i&amp;subset=cyrillic" rel="stylesheet">
+
+  //= template/style.html
+</head>
+
+<body id="top">
+  <div class="wrapper">
+    //= template/header.html
+    <div class="page-content">
+      <div class="container">
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="main.html"><i class="ion-ios-home"></i></a></li>
+          <li class="breadcrumbs__item">Контакты</li>
+        </ul>
+        <h1>Контакты</h1>
+        <div class="about row">
+          <div class="col-md-4">
+            <i class="ion-ios-clock"></i>
+            <div>
+              <p class="title">Пн - Сб / 10:00 - 22:00</p>
+              <p>Наши рабочие часы</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <i class="ion-ios-call"></i>
+            <div>
+              <p class="title"><a href="tel:+7 (812) 5794600">+7 (812) 5794600</a></p>
+              <p>Мы будем рады вашему звонку!</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <i class="ion-ios-pin"></i>
+            <div>
+              <p class="title">Dissonance</p>
+              <p>г. Санкт-Петербург, ул.&nbsp;Рылеева&nbsp;5</p>
+            </div>
+          </div>
+        </div>
+        <h2>Форма обратной связи</h2>
+        <form class="feedback" action="/" method="post">
+          <div class="feedback__row row">
+            <label class="feedback__label col-md-3 col-lg-2 d-md-flex align-items-center justify-content-end" for="input-name"><span class="required">*</span>Ваше имя</label>
+            <div class="col-md-9 col-lg-10">
+              <input class="feedback__input input" name="name" value="" id="input-name" type="text">
+            </div>
+          </div>
+          <div class="feedback__row row">
+            <label class="feedback__label col-md-3 col-lg-2" for="input-email"><span class="required">*</span>Введите ваш адрес электронной почты</label>
+            <div class="col-md-9 col-lg-10">
+              <input class="feedback__input input" name="email" id="input-email" type="text">
+            </div>
+          </div>
+          <div class="feedback__row row">
+            <label class="feedback__label col-md-3 col-lg-2" for="input-enquiry"><span class="required">*</span>Ваш вопрос или сообщение</label>
+            <div class="col-md-9 col-lg-10">
+              <textarea class="feedback__textarea textarea" name="enquiry" rows="10" id="input-enquiry"></textarea>
+            </div>
+          </div>
+  				<div class="row">
+            <div class="feedback__note col-md-7 col-lg-5 offset-lg-2 d-md-flex align-items-center">
+              <label for="agree"><input id="agree" name="agree" value="1" type="checkbox"> Я прочитал <a href="#"><b>Условия соглашения</b></a> и согласен с условиями безопасности и обработки персональных данных</label>
+            </div>
+            <div class="feedback__button-block col-md-5">
+              <button class="button button--big" type="submit">ОТПРАВИТЬ СООБЩЕНИЕ</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  //= template/footer.html
+  <a class="js-to-top back-top" href="#top"><i class="icon ion-ios-arrow-up"></i></a>
+  //= template/login.html
+  //= template/register.html
+  //= template/scripts.html
+</body>
+
+</html>

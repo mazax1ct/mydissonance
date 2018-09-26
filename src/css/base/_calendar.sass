@@ -1,0 +1,62 @@
+.calendar
+  display: flex
+
+  &__input
+    background-color: #fff
+    background-clip: padding-box
+    border: 1px solid #ced4da
+    border-top-left-radius: 6px
+    border-bottom-left-radius: 6px
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075)
+    color: #495057
+    font-family: inherit
+    font-size: 12px
+    height: 34px
+    line-height: 34px
+    margin-right: -1px
+    padding: 0 10px
+    position: relative
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out
+    width: 180px
+    z-index: 1
+
+    &:focus
+      background-color: #fff
+      border-color: #66afe9
+      box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6)
+      outline: 0
+
+  &__button
+    align-items: center
+    background-color: #fff
+    border: 1px solid #ced4da
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075)
+    border-top-right-radius: 6px
+    border-bottom-right-radius: 6px
+    cursor: pointer
+    display: flex
+    justify-content: center
+    height: 34px
+    width: 40px
+    text-align: center
+
+.calendar__input::-webkit-input-placeholder
+  color: #6c757d
+  opacity: 1
+
+.calendar__input::-moz-placeholder
+  color: #6c757d
+  opacity: 1
+
+.calendar__input:-ms-input-placeholder
+  color: #6c757d
+  opacity: 1
+
+.calendar__input:focus::-webkit-input-placeholder
+  opacity: 0
+
+.calendar__input:focus::-moz-placeholder
+  opacity: 0
+
+.calendar__input:focus:-ms-input-placeholder
+  opacity: 0
