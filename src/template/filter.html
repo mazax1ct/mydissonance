@@ -1,128 +1,379 @@
-<div class="col-filter">
-  <h3>Найти</h3>
-  <div class="search-input">
-    <input class="" name="" type="text" value="" placeholder="Исполнитель">
-  </div>
-  <div class="search-input">
-    <input class="" name="" type="text" value="" placeholder="Альбом">
-  </div>
-  <div class="search-input">
-    <input class="" name="" type="text" value="" placeholder="Год">
-  </div>
-  <div class="search-input">
-    <input class="" name="" type="text" value="" placeholder="Страна">
-  </div>
-  <div class="search-input">
-    <input class="" name="" type="text" value="" placeholder="Лейбл">
-  </div>
-  <a class="button btn-small" href="#">Смотреть все</a>
-</div>
-<div class="col-filter">
-  <h3>Выбрать</h3>
-</div>
-<div class="col-filter">
-  <div class="filter-input">
-    <label>Цена пластинки</label>
-    <div class="filter-slider">
-      <div class="range-slider ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content" data-min="15" data-max="35000">
-        <div class="ui-slider-range ui-corner-all ui-widget-header" style="left: 0%; width: 100%;"></div><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 0%;"></span><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 100%;"></span>
+<div class="filter">
+  <div class="bx-sidebar-block">
+    <div class="bx-filter bx-blue">
+      <div class="bx-filter-section">
+        <form name="_form" action="/catalog/" method="get" class="smartfilter">
+          <div class="bx-filter-parameters-box bx-active">
+            <span class="bx-filter-container-modef"></span>
+            <div class="bx-filter-parameters-box-title" onclick="smartFilter.hideFilterProps(this)">
+              <span class="bx-filter-parameters-box-hint">Исполнитель <i data-role="prop_angle" class="fa fa-angle-up"></i></span>
+            </div>
+            <div class="bx-filter-block" data-role="bx_filter_block">
+              <div class="bx-filter-parameters-box-container">
+                <select class="select">
+                  <option>Все</option>
+                  <option name="arrFilter_4" value="3725771860">A Day To Remember</option>
+                  <option name="arrFilter_4" value="980181419">A La Carte</option>
+                  <option name="arrFilter_4" value="3066365800">10 CC</option>
+                  <option name="arrFilter_4" value="4245286173">A Perfect Circle</option>
+                  <option name="arrFilter_4" value="2545945474">A-ha</option>
+                  <option name="arrFilter_4" value="2266225985">Ac/Dc</option>
+                  <option name="arrFilter_4" value="1763556461">Accept</option>
+                  <option name="arrFilter_4" value="505056507">Adele</option>
+                  <option name="arrFilter_4" value="1763556461">Accept</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="bx-filter-parameters-box bx-active">
+            <span class="bx-filter-container-modef"></span>
+            <div class="bx-filter-parameters-box-title" onclick="smartFilter.hideFilterProps(this)">
+              <span class="bx-filter-parameters-box-hint">Альбом <i data-role="prop_angle" class="fa fa-angle-down"></i></span>
+            </div>
+            <div class="bx-filter-block" data-role="bx_filter_block">
+              <div class="bx-filter-parameters-box-container">
+                <select class="select" data-search="true">
+                  <option>все</option>
+                  <option name="arrFilter_5" value="1041303366">10 Years On Top</option>
+                  <option name="arrFilter_5" value="644037352">1000 Forms Of Fear</option>
+                  <option name="arrFilter_5" value="3259565162">1001 Nights Of Love</option>
+                  <option name="arrFilter_5" value="1072475792">101</option>
+                  <option name="arrFilter_5" value="2145014825">12 Golden Hits</option>
+                  <option name="arrFilter_5" value="2283377795">13</option>
+                  <option name="arrFilter_5" value="1190940727">19</option>
+                  <option name="arrFilter_5" value="771248054">1962-1966</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="bx-filter-parameters-box bx-active">
+            <span class="bx-filter-container-modef"></span>
+            <div class="bx-filter-parameters-box-title" onclick="smartFilter.hideFilterProps(this)">
+              <span class="bx-filter-parameters-box-hint">Страна<i data-role="prop_angle" class="fa fa-angle-up"></i></span>
+            </div>
+            <div class="bx-filter-block" data-role="bx_filter_block">
+              <div class="bx-filter-parameters-box-container">
+                <select class="select" data-search="true">
+                  <option>все</option>
+                  <option name="arrFilter_1" value="1961363070">Австралия</option>
+                  <option name="arrFilter_1" value="2684430963">Бельгия</option>
+                  <option name="arrFilter_1" value="2601352398">Бразилия</option>
+                  <option name="arrFilter_1" value="1731744637">Великобритания</option>
+                  <option name="arrFilter_1" value="1970812553">Германия</option>
+                  <option name="arrFilter_1" value="1783890819">Греция</option>
+                  <option name="arrFilter_1" value="3588310374">Европейский союз</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="bx-filter-parameters-box bx-active">
+            <span class="bx-filter-container-modef"></span>
+            <div class="bx-filter-parameters-box-title" onclick="smartFilter.hideFilterProps(this)">
+              <span class="bx-filter-parameters-box-hint">Лейбл<i data-role="prop_angle" class="fa fa-angle-up"></i></span>
+            </div>
+            <div class="bx-filter-block" data-role="bx_filter_block">
+              <div class="bx-filter-parameters-box-container">
+                <select class="select" data-search="true">
+                  <option>все</option>
+                  <option name="arrFilter_3" value="3981150003">1987</option>
+                  <option name="arrFilter_3" value="2068592225">2XL</option>
+                  <option name="arrFilter_3" value="3927600121">4AD</option>
+                  <option name="arrFilter_3" value="3094619259">A&amp;M</option>
+                  <option name="arrFilter_3" value="2451121520">A&amp;M Records</option>
+                  <option name="arrFilter_3" value="891568578">Abc</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="bx-filter-parameters-box bx-active">
+            <span class="bx-filter-container-modef"></span>
+            <div class="bx-filter-parameters-box-title" onclick="smartFilter.hideFilterProps(this)">
+              <span class="bx-filter-parameters-box-hint">Жанры<i data-role="prop_angle" class="fa fa-angle-down"></i></span>
+            </div>
+            <div class="bx-filter-block" data-role="bx_filter_block">
+              <div class="bx-filter-parameters-box-container">
+                <div class="checkbox">
+                  <label data-role="label_arrFilter_9_107473999" class="bx-filter-param-label " for="arrFilter_9_107473999">
+                    <span class="bx-filter-input-checkbox">
+                      <input value="Y" name="arrFilter_9_107473999" id="arrFilter_9_107473999" onclick="smartFilter.click(this)" type="checkbox">
+                      <span class="bx-filter-param-text" title="Alternative &amp; Electronic">Alternative &amp; Electronic</span>
+                    </span>
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label data-role="label_arrFilter_9_3617361492" class="bx-filter-param-label " for="arrFilter_9_3617361492">
+                    <span class="bx-filter-input-checkbox">
+                      <input value="Y" name="arrFilter_9_3617361492" id="arrFilter_9_3617361492" onclick="smartFilter.click(this)" type="checkbox">
+                      <span class="bx-filter-param-text" title="Blues">Blues</span>
+                    </span>
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label data-role="label_arrFilter_9_788202623" class="bx-filter-param-label " for="arrFilter_9_788202623">
+                    <span class="bx-filter-input-checkbox">
+                      <input value="Y" name="arrFilter_9_788202623" id="arrFilter_9_788202623" onclick="smartFilter.click(this)" type="checkbox">
+                      <span class="bx-filter-param-text" title="Classical">Classical</span>
+                    </span>
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label data-role="label_arrFilter_9_701762749" class="bx-filter-param-label " for="arrFilter_9_701762749">
+                    <span class="bx-filter-input-checkbox">
+                      <input value="Y" name="arrFilter_9_701762749" id="arrFilter_9_701762749" onclick="smartFilter.click(this)" type="checkbox">
+                      <span class="bx-filter-param-text" title="Disco">Disco</span>
+                    </span>
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label data-role="label_arrFilter_9_3396887545" class="bx-filter-param-label " for="arrFilter_9_3396887545">
+                    <span class="bx-filter-input-checkbox">
+                      <input value="Y" name="arrFilter_9_3396887545" id="arrFilter_9_3396887545" onclick="smartFilter.click(this)" type="checkbox">
+                      <span class="bx-filter-param-text" title="Experimental">Experimental</span>
+                    </span>
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label data-role="label_arrFilter_9_3958176409" class="bx-filter-param-label " for="arrFilter_9_3958176409">
+                    <span class="bx-filter-input-checkbox">
+                      <input value="Y" name="arrFilter_9_3958176409" id="arrFilter_9_3958176409" onclick="smartFilter.click(this)" type="checkbox">
+                      <span class="bx-filter-param-text" title="Expiremental">Expiremental</span>
+                    </span>
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label data-role="label_arrFilter_9_1506435122" class="bx-filter-param-label " for="arrFilter_9_1506435122">
+                    <span class="bx-filter-input-checkbox">
+                      <input value="Y" name="arrFilter_9_1506435122" id="arrFilter_9_1506435122" onclick="smartFilter.click(this)" type="checkbox">
+                      <span class="bx-filter-param-text" title="Jazz">Jazz</span>
+                    </span>
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label data-role="label_arrFilter_9_3227710665" class="bx-filter-param-label " for="arrFilter_9_3227710665">
+                    <span class="bx-filter-input-checkbox">
+                      <input value="Y" name="arrFilter_9_3227710665" id="arrFilter_9_3227710665" onclick="smartFilter.click(this)" type="checkbox">
+                      <span class="bx-filter-param-text" title="Metal">Metal</span>
+                    </span>
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label data-role="label_arrFilter_9_433108758" class="bx-filter-param-label " for="arrFilter_9_433108758">
+                    <span class="bx-filter-input-checkbox">
+                      <input value="Y" name="arrFilter_9_433108758" id="arrFilter_9_433108758" onclick="smartFilter.click(this)" type="checkbox">
+                      <span class="bx-filter-param-text" title="Pop">Pop</span>
+                    </span>
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label data-role="label_arrFilter_9_1995512148" class="bx-filter-param-label " for="arrFilter_9_1995512148">
+                    <span class="bx-filter-input-checkbox">
+                      <input value="Y" name="arrFilter_9_1995512148" id="arrFilter_9_1995512148" onclick="smartFilter.click(this)" type="checkbox">
+                      <span class="bx-filter-param-text" title="Prog &amp; Psychodel">Prog &amp; Psychodel</span>
+                    </span>
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label data-role="label_arrFilter_9_962538434" class="bx-filter-param-label " for="arrFilter_9_962538434">
+                    <span class="bx-filter-input-checkbox">
+                      <input value="Y" name="arrFilter_9_962538434" id="arrFilter_9_962538434" onclick="smartFilter.click(this)" type="checkbox">
+                      <span class="bx-filter-param-text" title="Punk">Punk</span>
+                    </span>
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label data-role="label_arrFilter_9_927579042" class="bx-filter-param-label " for="arrFilter_9_927579042">
+                    <span class="bx-filter-input-checkbox">
+                      <input value="Y" name="arrFilter_9_927579042" id="arrFilter_9_927579042" onclick="smartFilter.click(this)" type="checkbox">
+                      <span class="bx-filter-param-text" title="Rock">Rock</span>
+                    </span>
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label data-role="label_arrFilter_9_1629115851" class="bx-filter-param-label " for="arrFilter_9_1629115851">
+                    <span class="bx-filter-input-checkbox">
+                      <input value="Y" name="arrFilter_9_1629115851" id="arrFilter_9_1629115851" onclick="smartFilter.click(this)" type="checkbox">
+                      <span class="bx-filter-param-text" title="Soul Funk Reggae">Soul Funk Reggae</span>
+                    </span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bx-filter-parameters-box bx-active">
+            <span class="bx-filter-container-modef"></span>
+            <div class="bx-filter-parameters-box-title" onclick="smartFilter.hideFilterProps(this)"><span>Цена <i data-role="prop_angle" class="fa fa-angle-down"></i></span></div>
+            <div class="bx-filter-block" data-role="bx_filter_block">
+              <div class="bx-filter-parameters-box-container slider-inputs">
+                <div class="bx-filter-parameters-box-container-block bx-left">
+                  <i class="bx-ft-sub">От</i>
+                  <div class="bx-filter-input-container">
+                    <input class="min-price" name="arrFilter_P1_MIN" id="arrFilter_P1_MIN" value="" size="5" onkeyup="smartFilter.keyup(this)" type="text">
+                  </div>
+                </div>
+                <div class="bx-filter-parameters-box-container-block bx-right">
+                  <i class="bx-ft-sub">До</i>
+                  <div class="bx-filter-input-container">
+                    <input class="max-price" name="arrFilter_P1_MAX" id="arrFilter_P1_MAX" value="" size="5" onkeyup="smartFilter.keyup(this)" type="text">
+                  </div>
+                </div>
+              </div>
+              <div class="bx-ui-slider-track-container">
+                <div class="bx-ui-slider-track" id="drag_track_c4ca4238a0b923820dcc509a6f75849b">
+                  <div class="bx-ui-slider-part p1"><span>500</span></div>
+                  <div class="bx-ui-slider-part p2"><span>9 125</span></div>
+                  <div class="bx-ui-slider-part p3"><span>17 750</span></div>
+                  <div class="bx-ui-slider-part p4"><span>26 375</span></div>
+                  <div class="bx-ui-slider-part p5"><span>35 000</span></div>
+                  <div class="bx-ui-slider-pricebar-vd" style="left: 0;right: 0;" id="colorUnavailableActive_c4ca4238a0b923820dcc509a6f75849b"></div>
+                  <div class="bx-ui-slider-pricebar-vn" style="left: 0%; right: 0%;" id="colorAvailableInactive_c4ca4238a0b923820dcc509a6f75849b"></div>
+                  <div class="bx-ui-slider-pricebar-v" style="left: 0%; right: 0%;" id="colorAvailableActive_c4ca4238a0b923820dcc509a6f75849b"></div>
+                  <div class="bx-ui-slider-range" id="drag_tracker_c4ca4238a0b923820dcc509a6f75849b" style="left: 0%; right: 0%;">
+                    <a class="bx-ui-slider-handle left" style="left:0;" href="javascript:void(0)" id="left_slider_c4ca4238a0b923820dcc509a6f75849b"></a>
+                    <a class="bx-ui-slider-handle right" style="right:0;" href="javascript:void(0)" id="right_slider_c4ca4238a0b923820dcc509a6f75849b"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bx-filter-parameters-box bx-active">
+            <span class="bx-filter-container-modef"></span>
+            <div class="bx-filter-parameters-box-title" onclick="smartFilter.hideFilterProps(this)">
+              <span class="bx-filter-parameters-box-hint">Состояние пластинки	<i data-role="prop_angle" class="fa fa-angle-up"></i></span>
+            </div>
+            <div class="bx-filter-block" data-role="bx_filter_block">
+              <div class="bx-filter-parameters-box-container">
+                <div class="bx-filter-param-btn-inline">
+                  <input style="display: none" name="arrFilter_2_4024490601" id="arrFilter_2_4024490601" value="Y" type="checkbox">
+                  <label for="arrFilter_2_4024490601" data-role="label_arrFilter_2_4024490601" class="bx-filter-param-label" onclick="smartFilter.keyup(BX('arrFilter_2_4024490601')); BX.toggleClass(this, 'bx-active');">
+                    <span class="bx-filter-param-btn bx-color-sl">
+                      <span class="bx-filter-btn-color-icon" style="background-image:url('images/icons/filter/ss_1.png');"></span>
+                    </span>
+                  </label>
+                  <input style="display: none" name="arrFilter_2_51966817" id="arrFilter_2_51966817" value="Y" type="checkbox">
+                  <label for="arrFilter_2_51966817" data-role="label_arrFilter_2_51966817" class="bx-filter-param-label " onclick="smartFilter.keyup(BX('arrFilter_2_51966817')); BX.toggleClass(this, 'bx-active');">
+                    <span class="bx-filter-param-btn bx-color-sl">
+                      <span class="bx-filter-btn-color-icon" style="background-image:url('images/icons/filter/m_1.png');"></span>
+                    </span>
+                  </label>
+                  <input style="display: none" name="arrFilter_2_429359035" id="arrFilter_2_429359035" value="Y" type="checkbox">
+                  <label for="arrFilter_2_429359035" data-role="label_arrFilter_2_429359035" class="bx-filter-param-label " onclick="smartFilter.keyup(BX('arrFilter_2_429359035')); BX.toggleClass(this, 'bx-active');">
+                    <span class="bx-filter-param-btn bx-color-sl">
+                      <span class="bx-filter-btn-color-icon" style="background-image:url('images/icons/filter/nm_1.png');"></span>
+                    </span>
+                  </label>
+                  <input style="display: none" name="arrFilter_2_2322894497" id="arrFilter_2_2322894497" value="Y" type="checkbox">
+                  <label for="arrFilter_2_2322894497" data-role="label_arrFilter_2_2322894497" class="bx-filter-param-label " onclick="smartFilter.keyup(BX('arrFilter_2_2322894497')); BX.toggleClass(this, 'bx-active');">
+                    <span class="bx-filter-param-btn bx-color-sl">
+                      <span class="bx-filter-btn-color-icon" style="background-image:url('images/icons/filter/nm-_1.png');"></span>
+                    </span>
+                  </label>
+                  <input style="display: none" name="arrFilter_2_3996488929" id="arrFilter_2_3996488929" value="Y" type="checkbox">
+                  <label for="arrFilter_2_3996488929" data-role="label_arrFilter_2_3996488929" class="bx-filter-param-label bx-active" onclick="smartFilter.keyup(BX('arrFilter_2_3996488929')); BX.toggleClass(this, 'bx-active');">
+                    <span class="bx-filter-param-btn bx-color-sl">
+                      <span class="bx-filter-btn-color-icon" style="background-image:url('images/icons/filter/ex+_1.png');"></span>
+                    </span>
+                  </label>
+                  <input style="display: none" name="arrFilter_2_2719464129" id="arrFilter_2_2719464129" value="Y" type="checkbox">
+                  <label for="arrFilter_2_2719464129" data-role="label_arrFilter_2_2719464129" class="bx-filter-param-label " onclick="smartFilter.keyup(BX('arrFilter_2_2719464129')); BX.toggleClass(this, 'bx-active');">
+                    <span class="bx-filter-param-btn bx-color-sl">
+                      <span class="bx-filter-btn-color-icon" style="background-image:url('images/icons/filter/ex_1.png');"></span>
+                    </span>
+                  </label>
+                  <input style="display: none" name="arrFilter_2_627728487" id="arrFilter_2_627728487" value="Y" type="checkbox">
+                  <label for="arrFilter_2_627728487" data-role="label_arrFilter_2_627728487" class="bx-filter-param-label bx-active" onclick="smartFilter.keyup(BX('arrFilter_2_627728487')); BX.toggleClass(this, 'bx-active');">
+                    <span class="bx-filter-param-btn bx-color-sl">
+                      <span class="bx-filter-btn-color-icon" style="background-image:url('images/icons/filter/ex-_1.png');"></span>
+                    </span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bx-filter-parameters-box bx-active">
+            <span class="bx-filter-container-modef"></span>
+            <div class="bx-filter-parameters-box-title" onclick="smartFilter.hideFilterProps(this)">
+              <span class="bx-filter-parameters-box-hint">Состояние обложки <i data-role="prop_angle" class="fa fa-angle-down"></i></span>
+            </div>
+            <div class="bx-filter-block" data-role="bx_filter_block">
+              <div class="bx-filter-parameters-box-container">
+                <div class="bx-filter-param-btn-inline">
+                  <input style="display: none" name="arrFilter_8_4024490601" id="arrFilter_8_4024490601" value="Y" type="checkbox">
+                  <label for="arrFilter_8_4024490601" data-role="label_arrFilter_8_4024490601" class="bx-filter-param-label " onclick="smartFilter.keyup(BX('arrFilter_8_4024490601')); BX.toggleClass(this, 'bx-active');">
+                    <span class="bx-filter-param-btn bx-color-sl">
+                      <span class="bx-filter-btn-color-icon" style="background-image:url('images/icons/filter/ss_2.png');"></span>
+                    </span>
+                  </label>
+                  <input style="display: none" name="arrFilter_8_51966817" id="arrFilter_8_51966817" value="Y" type="checkbox">
+                  <label for="arrFilter_8_51966817" data-role="label_arrFilter_8_51966817" class="bx-filter-param-label bx-active" onclick="smartFilter.keyup(BX('arrFilter_8_51966817')); BX.toggleClass(this, 'bx-active');">
+                    <span class="bx-filter-param-btn bx-color-sl">
+                      <span class="bx-filter-btn-color-icon" style="background-image:url('images/icons/filter/m_2.png');"></span>
+                    </span>
+                  </label>
+                  <input style="display: none" name="arrFilter_8_429359035" id="arrFilter_8_429359035" value="Y" type="checkbox">
+                  <label for="arrFilter_8_429359035" data-role="label_arrFilter_8_429359035" class="bx-filter-param-label bx-active" onclick="smartFilter.keyup(BX('arrFilter_8_429359035')); BX.toggleClass(this, 'bx-active');">
+                    <span class="bx-filter-param-btn bx-color-sl">
+                      <span class="bx-filter-btn-color-icon" style="background-image:url('images/icons/filter/nm_2.png');"></span>
+                    </span>
+                  </label>
+                  <input style="display: none" name="arrFilter_8_2322894497" id="arrFilter_8_2322894497" value="Y" type="checkbox">
+                  <label for="arrFilter_8_2322894497" data-role="label_arrFilter_8_2322894497" class="bx-filter-param-label " onclick="smartFilter.keyup(BX('arrFilter_8_2322894497')); BX.toggleClass(this, 'bx-active');">
+                    <span class="bx-filter-param-btn bx-color-sl">
+                      <span class="bx-filter-btn-color-icon" style="background-image:url('images/icons/filter/nm-_2.png');"></span>
+                    </span>
+                  </label>
+                  <input style="display: none" name="arrFilter_8_3996488929" id="arrFilter_8_3996488929" value="Y" type="checkbox">
+                  <label for="arrFilter_8_3996488929" data-role="label_arrFilter_8_3996488929" class="bx-filter-param-label " onclick="smartFilter.keyup(BX('arrFilter_8_3996488929')); BX.toggleClass(this, 'bx-active');">
+                    <span class="bx-filter-param-btn bx-color-sl">
+                      <span class="bx-filter-btn-color-icon" style="background-image:url('images/icons/filter/ex+_2.png');"></span>
+                    </span>
+                  </label>
+                  <input style="display: none" name="arrFilter_8_2719464129" id="arrFilter_8_2719464129" value="Y" type="checkbox">
+                  <label for="arrFilter_8_2719464129" data-role="label_arrFilter_8_2719464129" class="bx-filter-param-label bx-active" onclick="smartFilter.keyup(BX('arrFilter_8_2719464129')); BX.toggleClass(this, 'bx-active');">
+                    <span class="bx-filter-param-btn bx-color-sl">
+                      <span class="bx-filter-btn-color-icon" style="background-image:url('images/icons/filter/ex_2.png');"></span>
+                    </span>
+                  </label>
+                  <input style="display: none" name="arrFilter_8_627728487" id="arrFilter_8_627728487" value="Y" type="checkbox">
+                  <label for="arrFilter_8_627728487" data-role="label_arrFilter_8_627728487" class="bx-filter-param-label " onclick="smartFilter.keyup(BX('arrFilter_8_627728487')); BX.toggleClass(this, 'bx-active');">
+                    <span class="bx-filter-param-btn bx-color-sl">
+                      <span class="bx-filter-btn-color-icon" style="background-image:url('images/icons/filter/ex-_2.png');"></span>
+                    </span>
+                  </label>
+                  <input style="display: none" name="arrFilter_8_23858796" id="arrFilter_8_23858796" value="Y" type="checkbox">
+                  <label for="arrFilter_8_23858796" data-role="label_arrFilter_8_23858796" class="bx-filter-param-label bx-active" onclick="smartFilter.keyup(BX('arrFilter_8_23858796')); BX.toggleClass(this, 'bx-active');">
+                    <span class="bx-filter-param-btn bx-color-sl">
+                      <span class="bx-filter-btn-color-icon" style="background-image:url('images/icons/filter/ss_2.png');"></span>
+                    </span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bx-filter-button-box">
+            <div class="bx-filter-block">
+              <div class="bx-filter-parameters-box-container">
+                <input class="button" id="set_filter" name="set_filter" value="Показать" type="button">
+                <input class="button button--red" id="del_filter" name="del_filter" value="Сбросить" type="button">
+                <div class="bx-filter-popup-result left" id="modef" style="display:none">
+                  Выбрано: <span id="modef_num">0</span><span class="arrow"></span>
+                  <br>
+                  <a href="/catalog/filter/clear/apply/" target="">Показать</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="clb"></div>
+        </form>
       </div>
-      <div class="slider-data">
-        Цена:
-        <span class="data">
-          от <input value="15" min="15" max="35000" data-type="min" data-name="price-min" style="width: 16px;" type="number">
-          до <input value="35000" min="15" max="35000" data-type="max" data-name="price-max" style="width: 40px;" type="number">
-        </span>
-        <span class="add-info">р.</span>
-      </div>
     </div>
   </div>
-</div>
-<div class="col-filter">
-  <div class="filter-input">
-    <label>Состояние пластинки</label>
-  </div>
-  <div class="filter-image-list clearfix vinyl-state">
-    <div class="col-md-5ths item">
-      <div class="image" style="background-position: 0px 0px;"></div>
-      <input data-name="vinyl_state[]" data-value="1" type="hidden">
-    </div>
-    <div class="col-md-5ths item">
-      <div class="image" style="background-position: -48px 0px;"></div>
-      <input data-name="vinyl_state[]" data-value="2" type="hidden">
-    </div>
-    <div class="col-md-5ths item">
-      <div class="image" style="background-position: -96px 0px;"></div>
-      <input data-name="vinyl_state[]" data-value="3" type="hidden">
-    </div>
-    <div class="col-md-5ths item">
-      <div class="image" style="background-position: -144px 0px;"></div>
-      <input data-name="vinyl_state[]" data-value="4" type="hidden">
-    </div>
-    <div class="col-md-5ths item">
-      <div class="image" style="background-position: -192px 0px;"></div>
-      <input data-name="vinyl_state[]" data-value="5" type="hidden">
-    </div>
-  </div>
-</div>
-<div class="col-filter">
-  <div class="filter-input">
-    <label>Состояние конверта</label>
-  </div>
-  <div class="filter-image-list clearfix cover-state">
-    <input data-name="cover_state" type="hidden">
-    <div class="col-md-5ths item" data-value="1">
-      <div class="image" style="background-position: 0px -35px;"></div>
-      <input data-name="cover_state[]" data-value="1" type="hidden">
-    </div>
-    <div class="col-md-5ths item" data-value="2">
-      <div class="image" style="background-position: -48px -35px;"></div>
-      <input data-name="cover_state[]" data-value="2" type="hidden">
-    </div>
-    <div class="col-md-5ths item" data-value="3">
-      <div class="image" style="background-position: -96px -35px;"></div>
-      <input data-name="cover_state[]" data-value="3" type="hidden">
-    </div>
-    <div class="col-md-5ths item" data-value="4">
-      <div class="image" style="background-position: -144px -35px;"></div>
-      <input data-name="cover_state[]" data-value="4" type="hidden">
-    </div>
-    <div class="col-md-5ths item" data-value="5">
-      <div class="image" style="background-position: -192px -35px;"></div>
-      <input data-name="cover_state[]" data-value="5" type="hidden">
-    </div>
-  </div>
-</div>
-<div class="col-filter">
-  <div class="filter-input">
-    <label>Год выпуска пластинки</label>
-    <div class="filter-slider">
-      <div class="range-slider ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content" data-min="1958" data-max="2019">
-        <div class="ui-slider-range ui-corner-all ui-widget-header" style="left: 0%; width: 100%;"></div><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 0%;"></span><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 100%;"></span>
-      </div>
-      <div class="slider-data">
-        Выпущена:
-        <span class="data">
-          с <input value="1958" min="1958" max="2019" data-type="min" data-name="year-min" style="width: 32px;" type="number">
-          по <input value="2019" min="1958" max="2019" data-type="max" data-name="year-max" style="width: 32px;" type="number">
-        </span>
-        <span class="add-info">гг.</span>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="col-filter">
-  <div class="filter-input">
-    <label>Тип пластинки</label>
-  </div>
-  <div class="filter-list clearfix">
-    <input data-name="vinyl_type" type="hidden">
-    <div class="item" data-value="1">
-      <span class="checkmark"></span>
-      <span>Цветной винил</span>
-    </div>
-  </div>
-</div>
-<div class="col-filter">
-  <a class="button btn-small" href="#">Сбросить фильтр</a>
 </div>

@@ -41,6 +41,13 @@ $(document).ready(function() {
     });
   }
 
+  //кастомный селект
+  setTimeout(function() {
+    $('.select').styler({
+      selectSearch: true
+    });
+  }, 100);
+
   //скролл к контенту
   $('.banner-block__button').click(function() {
     if($('body').width()> 1199){
