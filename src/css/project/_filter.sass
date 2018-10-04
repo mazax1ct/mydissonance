@@ -4,17 +4,14 @@
   padding: 20px
 
   .select
+    height: 34px
     width: 100%
 
 .bx-filter
-  width: 100%
-  min-width: 220px
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif
   margin-bottom: 20px
 
 .bx-filter .bx-filter-section
   position: relative
-  padding-top: 26px
 
 .bx-filter .bx-filter-section>.row
   padding: 0 5px
@@ -92,14 +89,12 @@
   padding-bottom: 0
 
 .bx-filter .bx-ui-slider-track-container
-  padding-top: 35px
-  padding-bottom: 25px
-  width: 100%
-  min-width: 100%
+  padding: 35px 5px 25px
 
 .bx-filter .bx-ui-slider-track
   position: relative
   height: 7px
+  z-index: 1
 
 .bx-filter .bx-ui-slider-part
   position: absolute
@@ -149,21 +144,26 @@
   bottom: 0
 
 .bx-filter .bx-ui-slider-range
-  z-index: 50
+  top: -8px
+  bottom: auto
+  z-index: 4
 
 .bx-filter .bx-ui-slider-pricebar
   z-index: 100
 
 .bx-filter .bx-ui-slider-pricebar-vd
-  z-index: 60
+  z-index: 1
 
 .bx-filter .bx-ui-slider-pricebar-vn
-  z-index: 70
+  z-index: 2
 
 .bx-filter .bx-ui-slider-pricebar-v
-  z-index: 80
+  z-index: 3
 
 .bx-filter .bx-ui-slider-handle
+  background-color: #fff
+  border-radius: 50%
+  border: 1px solid #ccc
   position: absolute
   top: 100%
   width: 22px
@@ -178,11 +178,11 @@
 
 .bx-filter .bx-ui-slider-handle.left
   left: 0
-  margin-left: -21px
+  margin-left: -11px
 
 .bx-filter .bx-ui-slider-handle.right
   right: 0
-  margin-right: -21px
+  margin-right: -11px
 
 .bx-filter .bx-filter-select-container
   display: block
@@ -578,3 +578,12 @@
   .bx-filter .bx-filter-popup-result .arrow
     @media(max-width:767px)
       display: none
+
+.bx-filter .bx-ui-slider-pricebar-vd
+  background: #849da4
+
+.bx-filter .bx-ui-slider-pricebar-vn
+  background: #a8dff3
+
+.bx-filter .bx-ui-slider-pricebar-v
+  background: #499fd8
