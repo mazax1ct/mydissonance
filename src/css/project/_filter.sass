@@ -42,14 +42,12 @@
 .bx-filter .bx-filter-block
   display: none
   transition: padding .3s ease
-  box-sizing: content-box
 
 .bx-filter .bx-filter-button-box .bx-filter-block,
 .bx-filter .bx-filter-parameters-box.bx-active .bx-filter-block
   display: block
 
 .bx-filter .bx-filter-parameters-box.bx-active .bx-filter-block i.bx-ft-sub
-  font-size: 14px
   font-style: normal
   display: block
   padding-right: 5px
@@ -65,16 +63,29 @@
   font-size: 11px
   color: #3f3f3f
   display: flex
+  width: 50%
 
 .slider-inputs
   display: flex
   justify-content: space-between
+
+  .bx-filter-input-container
+    flex-grow: 1
+
+  .bx-filter-parameters-box-container-block
+
+    &.bx-left
+      padding-right: 5px
+
+    &.bx-right
+      padding-left: 5px
 
 .bx-filter .bx-filter-input-container input
   background-color: #fff
   background-clip: padding-box
   border: 1px solid #ced4da
   border-radius: 6px
+  box-sizing: border-box
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075)
   color: #495057
   font-family: inherit
@@ -84,9 +95,16 @@
   min-width: 60px
   padding: 0 10px
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out
+  width: 100%
 
 .bx-filter .bx-filter-button-box .bx-filter-parameters-box-container
   padding-bottom: 0
+
+  .button
+    @media(min-width: 992px) and (max-width: 1199px)
+      display: block
+      margin-bottom: 5px
+      width: 100%
 
 .bx-filter .bx-ui-slider-track-container
   padding: 35px 5px 25px
@@ -124,10 +142,13 @@
   top: -16px
   left: 50%
   display: block
-  width: 100px
-  margin-left: -50px
+  width: 54px
+  margin-left: -27px
   text-align: center
   color: #000
+
+  @media(min-width: 992px) and (max-width: 1199px)
+    font-size: 9px
 
 .bx-filter .bx-ui-slider-part.p2 span,
 .bx-filter .bx-ui-slider-part.p3 span,
@@ -361,6 +382,10 @@
   transition: border .3s ease, box-shadow .1s ease, color .3s ease
   cursor: pointer
 
+  //@media(min-width: 992px) and (max-width: 1199px)
+    height: 23px
+    width: 23px
+
 .bx-retina .bx-filter .bx-filter-param-btn
   border-style: solid
   border-width: 1px
@@ -434,13 +459,10 @@
 
 .bx-filter-select-popup .bx-filter-btn-color-icon,
 .bx-filter .bx-filter-btn-color-icon
-  line-height: 24px
-  border-radius: 2px
-  display: inline-block
+  display: block
   width: 24px
   height: 24px
-  vertical-align: middle
-  background-size: cover
+  background-size: 24px 48px
 
 .bx-filter-select-popup .bx-filter-btn-color-icon
   width: 20px
