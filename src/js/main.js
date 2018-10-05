@@ -42,11 +42,7 @@ $(document).ready(function() {
   }
 
   //кастомный селект
-  setTimeout(function() {
-    $('.select').styler({
-      selectSearch: true
-    });
-  }, 100);
+  $('.js-select').selectize();
 
   //скролл к контенту
   $('.banner-block__button').click(function() {
@@ -129,6 +125,7 @@ $(document).ready(function() {
     }, 300);
   });
 
+  //слайдер на странице "о нас"
   if ($('.js-about-slider').length) {
     $('.js-about-slider').slick({
       mobileFirst: true,
