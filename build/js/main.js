@@ -127,7 +127,7 @@ $(document).ready(function() {
   });
 
   //открытие/закрытие корзины в шапке
-  $(".js-cart-open").click(function() {
+  $(".header__cart").on('click', '.js-cart-open', function() {
     $(".small-cart__dropdown").toggleClass('is-open');
     return false;
   });
