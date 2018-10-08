@@ -120,3 +120,42 @@
 
   a
     text-decoration: none
+
+.button-holder
+  margin-top: 20px
+  text-align: center
+
+.button-load-more
+  background-color: #e23e57
+  border-radius: 3px
+  border: none
+  color: #fff
+  cursor: pointer
+  display: inline-block
+  font-family: 'Open Sans', Arial, sans-serif
+  font-size: 14px
+  min-height: 40px
+  padding: 9px 20px 10px
+  position: relative
+  vertical-align: top
+  transition: all 0.3s ease-in-out
+  text-decoration: none
+
+  &:hover,
+  &:active
+    background-color: #e23e57
+    color: #fff
+
+  &.effect-spin
+    .button-load-more__inner
+      opacity: 0
+
+    &::before
+      background: url('/images/icons/spin.gif') no-repeat 0 0 / 40px 40px transparent
+      content: ''
+      height: 40px
+      left: 50%
+      position: absolute
+      top: 0
+      transform: translateX(-50%)
+      width: 40px
