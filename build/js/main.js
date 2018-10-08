@@ -19,7 +19,70 @@ $('.js-to-top').click(function () {
   return false;
 });
 
+var selector;
+
 $(document).ready(function() {
+  $(".ajax-area-wrap").each(function() {
+		var $ajaxAreaWrap = $(this),
+			ajaxAreaWrap = {
+				top: 0,
+				height: 0
+			},
+			$btn = $('.pagen-ajax-load'),
+			btn = {
+				title: $btn.attr('title'),
+				href: $btn.attr('href')
+			},
+			scrollTop = $(document).scrollTop(),
+			win = windowSizeGet(),
+			ajaxLoadInProcess = false;
+
+		// Window Events
+		$(window).on('resize', function() {
+			win = windowSizeGet();
+			ajaxAreaSizeDefine();
+		});
+
+		$(window).on('scroll', function() {
+			scrollTop = $(document).scrollTop();
+			ajaxAreaSizeDefine();
+			if (scrollTop > ajaxAreaWrap.top + ajaxAreaWrap.height - win.height && !ajaxLoadInProcess && $btn.is(':visible')) {
+				itemsLoadAjax($btn.attr('href'));
+			}
+		});
+
+		// Button Events
+		$btn.on('click', function() {
+			$btn.addClass('effect-spin');
+			History.pushState(null, btn.title, btn.href);
+			itemsLoadAjax(btn.href);
+			return false;
+		});
+
+		function itemsLoadAjax(href) {
+			ajaxLoadInProcess = true;
+			$.get(href, function(data) {
+				var $btnInData = $(data).find(".pagen-ajax-load"),
+					$ajaxAreaWrapInData = $(data).find(".ajax-area-wrap");
+				if ($btnInData.length > 0) {
+					$btn.attr('href', $btnInData.attr('href'));
+				} else {
+					$btn.parents('.button-holder').fadeOut();
+				}
+				$ajaxAreaWrap.append($ajaxAreaWrapInData.html());
+				$btn.removeClass('effect-spin');
+				setTimeout(function() {
+          ajaxLoadInProcess = false;
+        }, 1000);
+			});
+		}
+
+		function ajaxAreaSizeDefine() {
+			ajaxAreaWrap.top = $ajaxAreaWrap.offset().top;
+			ajaxAreaWrap.height = $ajaxAreaWrap.outerHeight();
+		}
+	});
+
   //слайдер баннер
   if ($('.js-main-banner').length) {
     $('.js-main-banner').slick({
@@ -42,7 +105,7 @@ $(document).ready(function() {
   }
 
   //кастомный селект
-  $('.js-select').selectize();
+  selector = $('.js-select').selectize();
 
   //скролл к контенту
   $('.banner-block__button').click(function() {
@@ -106,7 +169,7 @@ $(document).ready(function() {
       gallery:'gallery',
       cursor: 'pointer',
       galleryActiveClass: 'active',
-      imageCrossfade: true,
+      //imageCrossfade: true,
       loadingIcon: 'http://www.elevateweb.co.uk/spinner.gif',
       zoomWindowOffetx: 10,
       zoomWindowOffety: -3
@@ -135,3 +198,11 @@ $(document).ready(function() {
     });
   }
 });
+
+function windowSizeGet() {
+	var win = {
+		width: $(window).width(),
+		height: $(window).height()
+	}
+	return win;
+}
