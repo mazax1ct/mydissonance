@@ -81,7 +81,7 @@ $(document).ready(function() {
 			ajaxAreaWrap.top = $ajaxAreaWrap.offset().top;
 			ajaxAreaWrap.height = $ajaxAreaWrap.outerHeight();
 		}
-	});
+  });
 
   //слайдер баннер
   if ($('.js-main-banner').length) {
@@ -197,6 +197,12 @@ $(document).ready(function() {
       dots: true
     });
   }
+
+  //открытие/закрытие описания разделов фильтра
+  $(".js-filter-text-opener").click(function() {
+    $(".filter-text[data-text=" + $(this).attr("data-text") + "]").slideToggle();
+    return false;
+  });
 });
 
 function windowSizeGet() {
