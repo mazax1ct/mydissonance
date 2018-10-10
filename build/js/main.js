@@ -203,6 +203,12 @@ $(document).ready(function() {
     $(".filter-text[data-text=" + $(this).attr("data-text") + "]").slideToggle();
     return false;
   });
+
+  //открытие/закрытие фильтра
+  $(".js-filter-opener").click(function() {
+    $(".filter").slideToggle();
+    return false;
+  });
 });
 
 function windowSizeGet() {

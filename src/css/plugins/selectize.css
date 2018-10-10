@@ -120,6 +120,7 @@
 }
 
 .selectize-control {
+  height: 34px;
   position: relative;
 }
 
