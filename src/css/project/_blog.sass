@@ -1,0 +1,50 @@
+.blog-list
+  background-color: #fff
+  border: 1px solid #ededed
+  padding: 20px
+  padding-bottom: 0
+
+  .col-md-4
+    padding-bottom: 20px
+
+.post
+  border: 1px solid #e8e8e8
+  height: 100% !important
+
+  &__image
+    display: block
+
+    img
+      display: block
+      width: 100%
+
+  &__description
+    display: flex
+    flex-direction: column
+    //min-height: 200px
+    padding: 10px
+
+  &__date
+    font-size: 12px
+    margin-top: 0
+    margin-bottom: 0
+
+  &__title
+    font-size: 16px
+    font-weight: 700
+    margin-bottom: 10px
+    margin-top: 0
+
+    @media(min-width: 768px) and (max-width: 1199px)
+      font-size: 13px
+
+  &__preview-text
+    color: #666
+    font-size: 12px
+    font-weight: 600
+    font-style: italic
+    margin-top: 0
+    margin-bottom: 0
+
+  a
+    text-decoration: none
